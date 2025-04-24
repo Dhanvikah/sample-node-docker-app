@@ -26,6 +26,7 @@ spec:
 
     environment {
         DOCKER_IMAGE = 'komall6/sample-node-app'
+        KUBECONFIG_CREDENTIAL_ID = 'kubeconfig-id' 
     }
 
     stages {
