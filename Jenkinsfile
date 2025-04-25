@@ -35,6 +35,7 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 sh '''
+                    ls
                     kubectl apply -f k8s-deployment.yaml --validate=false
                     '''
             }
